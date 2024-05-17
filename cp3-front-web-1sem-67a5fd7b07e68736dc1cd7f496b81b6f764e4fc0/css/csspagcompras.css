@@ -1,0 +1,268 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+body {
+    background-color: #f5f5f5;
+}
+
+header {
+    background-color: #fff;
+    padding: 10px 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.menu-geral {
+    display: flex;
+    align-items: center;
+}
+
+.icone-menu img {
+    width: 40px;
+    height: 30px;
+}
+
+.links-navegacao {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.links-navegacao li a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+.busca-carrinho {
+    display: flex;
+    align-items: center;
+}
+
+.caixa-busca {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    margin-right: 10px;
+}
+
+.icone-carrinho img {
+    width: 70px;
+    height: 70px;
+    margin-top: 20px;
+}
+
+#novidade {
+    margin-top: 40px;
+    margin: 10%;
+}
+
+#cards-novidade{
+    display: flex;
+    justify-content: center;
+}
+
+#novidade h1{
+    font-size: 2em;
+    margin-bottom: 20px;
+    text-align: left;
+    font-weight: bold;
+}
+
+.novidades img{
+    width: 70%;
+    height:280px;
+}
+
+.novidades-meio img{
+    width: 70%;
+    height:280px;
+    border:1px solid #cccccca6;
+}
+
+.novidades-meio button{
+    background-color: #d9d9d9;
+    color: #6603ca;
+    border: none;
+    border-radius: 8px;
+    width: 50%;
+    height: 40px;
+    display: inline-block;
+    text-align: center;
+    padding: 10px 20px;
+    margin-top: 5px;
+    margin-left: 10%;
+    cursor: pointer;
+}
+
+.novidades-meio button:hover{
+    text-decoration: underline;
+    background-color: #ad69f1;
+    color: #ccc;
+}
+
+.novidades button{
+    background-color: #d9d9d9;
+    color: #6603ca;
+    border: none;
+    border-radius: 8px;
+    width: 50%;
+    height: 40px;
+    display: inline-block;
+    text-align: center;
+    padding: 10px 20px;
+    margin-top: 5px;
+    margin-left: 10%;
+    cursor: pointer;
+}
+.novidades button:hover{
+    text-decoration: underline;
+    background-color: #ad69f1;
+    color: #ccc;
+}
+
+
+#descontos {
+    margin-top: 40px;
+    margin: 10%;
+}
+
+#descontos h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    text-align: left;
+    font-weight: bold;
+}
+
+#produtos {
+    display: flex;
+    justify-content: flex-start;
+    gap: 50px;
+    flex-wrap: wrap;
+}
+
+.produto {
+    background-color:#f5f5f5;
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin: 10px 0;
+    width: 220px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    
+}
+
+.produto img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.produto p {
+    margin: 10px 0;
+    font-weight: bold;
+}
+
+.info-produtoss {
+    display: flex;
+    gap: 220px;
+}
+.precoproduto-text{
+    display: flex;
+    gap: 290px;
+}
+.add-carrinho{
+    display: flex;
+    gap: 180px;
+}
+.produto button{
+    background-color: aliceblue;
+    border-radius: 7px;
+    font-weight: bold;
+}
+
+
+@media only screen and (max-width: 768px) {
+
+    #cards-novidade {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .novidades, .novidades-meio {
+        flex-direction: column;
+        align-items: center;
+        width: 90%;
+    }
+
+    .novidades img, .novidades-meio img {
+        width: 100%;
+        height: auto;
+    }
+
+    .novidades-meio button, .novidades button {
+        width: 80%;
+        margin-left: 0;
+        margin-bottom: 5%;
+    }
+}
+
+
+@media only screen and (max-width: 480px) {
+    .menu-geral {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .links-navegacao {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    .links-navegacao li a {
+        padding: 5px 0;
+    }
+
+    .icone-carrinho img {
+        width: 30px;
+        height: 30px;
+        margin-top: 5px;
+    }
+
+    #novidade, #descontos {
+        margin: 10px;
+    }
+
+    .novidades button, .novidades-meio button {
+        width: 100%;
+    }
+
+    #produtos {
+        justify-content: center;
+    }
+
+    .produto {
+        width: 90%;
+        margin: 10px auto;
+    }
+
+    .info-produtoss, .precoproduto-text, .add-carrinho {
+        gap: 5px;
+    }
+}
+
+
